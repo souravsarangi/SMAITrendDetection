@@ -1,0 +1,3 @@
+First run python gscan.py <dataset_name>
+After that run python main.py
+ 
