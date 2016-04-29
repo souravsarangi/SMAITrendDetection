@@ -12,7 +12,7 @@ Steps Involved:
 - An Iterator Iterates over all the tweets and Indexes 1gram, 2gram, and 3 grams where these n-grams serve as index to a dictionary mapping tweet_time to frequency of the corresponding n gram for that particular time.
 - Now we calculate the df-idf score for each of these n-grams and then we extract some top K n-grams based on the df-idf score.
 
-  ![alt text](https://scontent-sin1-1.xx.fbcdn.net/v/t1.0-9/13007284_1056567421075157_8400821834248643816_n.jpg?oh=530cd3e1608558b15b19ffa08e2f355f&oe=57B6B5C5 "df-idf score" ) 
+  ![formulae](https://lh3.googleusercontent.com/TnIareOm7U8AtlYYEnLNOiH4bnBaUZ1Eey0hQtU1DBjXpTivaxnAiJ5pQuDb2DfKh5df047nBNhM5lk_Y_VpV7ilVLiE8JPaj_gWNasXbYTcP4OUFOogeAtP4FGx5dNRIYi351wj "df-idf score" ) 
 
 - Now at this point we introduce a distance measure d between two ngrams as no. of tweets both of them co-occur. (Normalization could be done we used log base 2 ). 
 Using the above mentioned d measure a adjacency matrix is formed and a clustering algorithm is employed ( Spectral Clustering ).
